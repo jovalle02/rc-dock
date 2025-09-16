@@ -53,6 +53,7 @@ body > .dragging-layer > div:last-child {
   position: relative;
   white-space: nowrap;
   outline: none;
+  border-radius: 10px 10px 0 0;
   zoom: 1;
 }
 .dock-ink-bar {
@@ -77,14 +78,14 @@ body > .dragging-layer > div:last-child {
   display: block;
   min-width: 30px;
   height: 30px;
-  text-align: center;
+  text-align: start;
   transition: color 0.25s cubic-bezier(0.35, 0, 0.25, 1);
   padding: 0;
   font-weight: 500;
-  border-bottom: 1px solid #434343;
   cursor: pointer;
   float: left;
   margin-right: 10px;
+  color: #ccc;
   background: #141414;
   outline: none;
 }
@@ -101,6 +102,7 @@ body > .dragging-layer > div:last-child {
 .dock-tab-active,
 .dock-tab-active:hover {
   color: #108ee9;
+  font-weight: 500;
   cursor: default;
   transform: translateZ(0);
 }
@@ -176,6 +178,7 @@ body > .dragging-layer > div:last-child {
   top: 6px;
   outline: none;
   transition: all 0.25s ease-in-out;
+  opacity: 0;
 }
 .dock-tab-close-btn:before {
   content: "X";
@@ -351,7 +354,7 @@ body.dock-dragging iframe {
   position: relative;
   color: rgba(255, 255, 255, 0.85);
   background: #141414;
-  border: 1px solid #434343;
+  border-radius: 10px;
 }
 .dock-panel.dragging {
   opacity: 0.3;
@@ -432,7 +435,7 @@ body.dock-dragging iframe {
 }
 .dock-divider {
   box-sizing: border-box;
-  flex: 0 0 4px;
+  flex: 0 0 18px;
   background: rgba(0, 0, 0, 0);
   z-index: 1;
 }

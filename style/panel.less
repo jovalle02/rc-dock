@@ -13,7 +13,8 @@ body.dock-dragging {
   position: relative;
   color: @text-color;
   background: @component-background;
-  border: 1px solid @panel-border-color;
+
+  border-radius: 10px;
 
   &.dragging {
     opacity: 0.3;
@@ -107,7 +108,7 @@ body.dock-dragging {
 
 .dock-divider {
   box-sizing: border-box;
-  flex: 0 0 4px;
+  flex: 0 0 18px;
   background: rgba(0, 0, 0, 0);
   z-index: 1;
 }
